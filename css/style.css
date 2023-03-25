@@ -112,6 +112,18 @@ nav #icon {
   }
 }
 
+@media (max-width: 376px) {
+  nav #icon {
+    line-height: 80px;
+  }
+}
+
+@media (max-width: 321px) {
+  nav #icon {
+    margin-right: 30px;
+  }
+}
+
 @media (max-width: 321px) {
   nav #icon {
     margin-right: 30px;
@@ -129,9 +141,14 @@ body {
 
 /* --------------------------------------- form area-------------------------------- */
 .web-content {
+  height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 20px;
 }
 
 .form-area {
@@ -140,7 +157,9 @@ body {
   height: -moz-fit-content;
   height: fit-content;
   background-color: white;
-  margin: 20px;
+  margin: 5%;
+  border: 3px solid #3498db;
+  border-radius: 20px;
 }
 
 .form-title {
@@ -165,12 +184,14 @@ body {
 }
 
 .input-feild {
-  padding: 25px;
+  padding-left: 30px;
+  padding-top: 10px;
+  padding-right: 30px;
 }
 
 .inpt {
   background-color: #cde7f9;
-  font-size: 25px;
+  font-size: 18px;
   outline: none;
   width: 100%;
   border: none;
@@ -178,13 +199,6 @@ body {
   padding: 0px;
   margin-bottom: 8px;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-}
-
-.feild-title {
-  font-size: 20px;
-  font-weight: 700;
-  padding-top: 0px;
-  padding-bottom: 5px;
 }
 
 .button-sec {
@@ -200,13 +214,37 @@ body {
 
 .button {
   width: 250px;
-  font-size: 14px;
+  font-size: 18px;
+  color: black;
+  text-align: center;
   font-weight: 600;
   background-color: #3498db;
   border: 1px solid #2f3640;
   padding: 8px;
   cursor: pointer;
-  border-radius: 3px;
+  border-radius: 10px;
+  margin-top: 10px;
+}
+
+.mgbtn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#dd {
+  height: 20%;
+  padding: 10%;
 }
 
 .button:hover {
@@ -214,22 +252,24 @@ body {
   color: white;
 }
 
-.ratio-bttn {
-  padding-top: 10px;
-}
-
-#gend {
-  margin-right: 20px;
-}
-
 #ab {
   margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.abc {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-bottom: 15px;
 }
 
 /* -----------------------------table area--------------------- */
 .table-area {
-  margin: 20px;
-  width: 70%;
+  width: 96%;
 }
 
 table {
@@ -255,8 +295,17 @@ th {
     margin-right: 20%;
   }
   /* -----------------------------table area--------------------- */
-  .table-area {
+  .table-area #o, .table-area #p, .table-area #q, .table-area #r {
     display: none;
+  }
+  .table-area #c, .table-area #d, .table-area #e, .table-area #f {
+    display: none;
+  }
+  .mgbtn {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
 }
 
@@ -265,5 +314,11 @@ th {
     width: 100%;
     margin: 10px;
   }
+  .web-content {
+    margin-top: 8%;
+  }
+  .table-area #l, .table-area #o, .table-area #p, .table-area #q, .table-area #r {
+    display: none;
+  }
 }
-/*# sourceMappingURL=manage.css.map */
+/*# sourceMappingURL=style.css.map */
